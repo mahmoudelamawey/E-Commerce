@@ -1,0 +1,18 @@
+
+<div  class="flex flex-col min-h-screen justify-between">
+   <div class="flex-1 pt-105">
+   <router-outlet></router-outlet>
+   </div>
+   <app-footer />
+
+</div>
+
+<ngx-spinner 
+   bdColor="rgba(0, 0, 0, 0.8)"
+  size="medium"
+  color="bg-green-700" 
+  type="square-jelly-box"
+  template="<img src='./images/fresh-cart-high-resolution-logo-transparent.png'/>"
+  [fullScreen]="true"
+  ><p style="color: white">Loading...</p>
+</ngx-spinner>
